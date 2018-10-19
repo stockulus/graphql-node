@@ -4,9 +4,9 @@
   "description": "Test graphql client",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "node .",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production node .",
     "test": "npm run lint",
     "lint": "eslint .",
     "updtr": "updtr --save-exact"
@@ -19,6 +19,9 @@
     "url": "git+https://github.com/stockulus/graphql-node.git"
   },
   "dependencies": {
+    "express": "4.16.4",
+    "express-http-proxy": "1.4.0",
+    "isomorphic-fetch": "2.2.1",
     "next": "7.0.2",
     "react": "16.5.2",
     "react-dom": "16.5.2"
