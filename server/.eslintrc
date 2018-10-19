@@ -1,0 +1,16 @@
+{
+  "extends": [
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "standard",
+    "prettier",
+    "prettier/standard"
+  ],
+  "globals": {},
+  "plugins": [
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": "error"
+  }
+}
