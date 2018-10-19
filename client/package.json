@@ -1,36 +1,39 @@
 {
-  "name": "@stockulus/graphql-node-server",
+  "name": "@stockulus/graphql-node-client",
   "version": "1.0.0",
-  "description": "Test graphql server",
+  "description": "Test graphql client",
   "main": "index.js",
   "scripts": {
-    "start": "node .",
-    "dev": "nodemon index.js",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
     "test": "npm run lint",
     "lint": "eslint .",
     "updtr": "updtr --save-exact"
   },
   "keywords": [],
-  "author": "Christoph Stock",
+  "author": "",
   "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stockulus/graphql-node.git"
   },
   "dependencies": {
-    "apollo-server": "2.1.0",
-    "graphql": "14.0.2"
+    "next": "7.0.2",
+    "react": "16.5.2",
+    "react-dom": "16.5.2"
   },
   "devDependencies": {
     "eslint": "5.7.0",
     "eslint-config-prettier": "3.1.0",
     "eslint-config-standard": "12.0.0",
+    "eslint-config-standard-jsx": "6.0.2",
     "eslint-plugin-import": "2.14.0",
     "eslint-plugin-node": "7.0.1",
     "eslint-plugin-prettier": "3.0.0",
     "eslint-plugin-promise": "4.0.1",
+    "eslint-plugin-react": "7.11.1",
     "eslint-plugin-standard": "4.0.0",
-    "nodemon": "1.18.4",
     "prettier": "1.14.3",
     "updtr": "3.1.0"
   }

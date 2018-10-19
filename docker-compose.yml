@@ -1,11 +1,21 @@
 version: '3'
 services:
+  client:
+    build: ./client
+    ports:
+    - "127.0.0.1:3000:3000"
+    environment:
+    - PORT=3000
+    - NODE_ENV=production
+    links:
+    - server
+    restart: always
   server:
     build: ./server
     ports:
     - "127.0.0.1:4000:4000"
     environment:
-    - PORT=5000
+    - PORT=4000
     - NODE_ENV=production
     links:
     - mysql
