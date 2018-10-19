@@ -19,11 +19,14 @@
     "url": "git+https://github.com/stockulus/graphql-node.git"
   },
   "dependencies": {
+    "apollo-boost": "0.1.16",
     "express": "4.16.4",
     "express-http-proxy": "1.4.0",
+    "graphql": "14.0.2",
     "isomorphic-fetch": "2.2.1",
     "next": "7.0.2",
     "react": "16.5.2",
+    "react-apollo": "2.2.4",
     "react-dom": "16.5.2"
   },
   "devDependencies": {

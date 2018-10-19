@@ -4,7 +4,7 @@
   "description": "Test and Demo Project",
   "scripts": {
     "start:server": "cd server; npm start",
-    "start:client": "cd client; npm run build; npm ",
+    "start:client": "cd client; npm run build; npm start",
     "dev:server": "cd server; npm run dev",
     "dev:cient": "cd client; npm start",
     "docker:start": "docker-compose up -d",

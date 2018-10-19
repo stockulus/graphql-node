@@ -19,13 +19,15 @@ nextApp
     // Create a new express app
     const app = express()
 
-    // add request logging
-    app.use((request, response, next) => {
-      if (request.originalUrl !== '/healthcheck') {
-        console.log(new Date(), request.method, request.originalUrl)
-      }
-      next()
-    })
+    if (!IS_DEV) {
+      // add request logging
+      app.use((request, response, next) => {
+        if (request.originalUrl !== '/healthcheck') {
+          console.log(new Date(), request.method, request.originalUrl)
+        }
+        next()
+      })
+    }
 
     // add Proxy
     app.use(
@@ -54,9 +56,9 @@ nextApp
 
       process.emit('SERVER_STARTED')
       console.log(
-        `Service listening (port: ${PORT}, env: ${
-          process.env.NODE_ENV
-        }, apiEnv: ${BACKEND_URL}, processId: ${process.pid})`
+        `Service listening (port: ${PORT}, apiEnv: ${BACKEND_URL}, processId: ${
+          process.pid
+        })`
       )
     })
   })
