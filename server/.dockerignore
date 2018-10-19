@@ -1,0 +1,6 @@
+node_modules/*
+.dockerignore
+.gitignore
+.eslintrc
+Dockerfile
+README.md
