@@ -6,7 +6,7 @@
     "start:server": "cd server; npm start",
     "start:client": "cd client; npm run build; npm start",
     "dev:server": "cd server; npm run dev",
-    "dev:cient": "cd client; npm start",
+    "dev:client": "cd client; npm start",
     "docker:start": "docker-compose up -d",
     "docker:stop": "docker-compose stop",
     "mysql:start": "docker-compose up -d mysql",
